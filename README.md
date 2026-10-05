@@ -28,15 +28,17 @@ Windows-only. Zero npm dependencies. No admin rights. Bilingual interface (简�
 
 ## Screenshots
 
+Rendered from the real WPF shell fed by the real reducer with synthetic sessions — no live desktop, no personal data (regenerate with `tools/Capture-DocsShots.ps1`).
+
 | Status bubble | Expanded conversation list |
 |---|---|
-| ![bubble](docs/images/shot-bubble2.png) | ![panel](docs/images/shot-panel.png) |
+| ![bubble](docs/images/shot-bubble-en.png) | ![panel](docs/images/shot-panel-en.png) |
 
-*The bubble shows stage, tool, todo progress, a ticking elapsed time and the long-task flag. The expanded list shows every surfaced conversation with its own status; the `+6` badge counts the rest.*
+*Left: an unread completion keeps its box with a ticking age, the badge names the rest ("2 more conversations (2 running)"), and nothing is lost by staying collapsed. Right: expanding shows every surfaced conversation as its own box — running work with live progress and a long-task flag, finished work waiting to be acknowledged, a failure with its error code — plus the full list below.*
 
-| On the desktop |
+| The pet and its bubble |
 |---|
-| ![live](docs/images/live-now.png) |
+| ![hero](docs/images/desktop-mock-en.png) |
 
 ---
 
@@ -226,6 +228,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\Validate-Shell.ps1
 | `tools/Install-Autostart.ps1` | Installs / removes / reports the Startup launcher |
 | `tools/Watch-Pet.ps1` + `Watch-Pet.vbs` | The watchdog loop and its hidden launcher |
 | `tools/build-sprites.mjs` | Rebuilds `assets/whale-sheet.png` from `art/whale.json` |
+| `tools/Capture-DocsShots.ps1` | Regenerates the documentation screenshots (real renderer, synthetic data) |
 | `tools/Test-*.ps1`, `Probe-*.ps1` | Live verification tooling (edges, hit-testing, watchdog, raising…) |
 | `tests/` | 96 unit tests, runner included (`run-tests.mjs`) |
 | `docs/images/` | Screenshots used by both READMEs |

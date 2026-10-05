@@ -28,15 +28,17 @@ DeepSeek Harness 的桌面伙伴：一只置顶的小蓝鲸，不打开主窗口
 
 ## 截图
 
-| 状态气泡 | 展开的对话列表 |
+以下图片均由真实 WPF 渲染函数 + 真实 reducer 生成的合成会话数据离屏渲染而来——没有桌面实拍，不含任何个人信息（可用 `tools/Capture-DocsShots.ps1` 重新生成）。
+
+| 状态气泡 | 展开的对话面板 |
 |---|---|
-| ![气泡](docs/images/shot-bubble2.png) | ![列表](docs/images/shot-panel.png) |
+| ![气泡](docs/images/shot-bubble.png) | ![列表](docs/images/shot-panel.png) |
 
-*气泡显示阶段、工具、todo 进度、跳动计时和长任务标记；展开列表显示每个对话的独立状态，`+6` 角标统计其余对话。*
+*左：未读完成保留气泡并持续更新"多久之前"，角标写明其余对话（"另有 2 个对话（2 个进行中）"）。右：展开后每个对话都有自己的卡片——进行中的带实时进度和长任务标记，已完成等待确认，出错带错误码——下方还有完整对话列表。*
 
-| 桌面实景 |
+| 桌宠与气泡 |
 |---|
-| ![实景](docs/images/live-now.png) |
+| ![示意图](docs/images/desktop-mock.png) |
 
 ---
 
@@ -226,6 +228,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\Validate-Shell.ps1
 | `tools/Install-Autostart.ps1` | 安装 / 卸载 / 查询"启动"文件夹启动器 |
 | `tools/Watch-Pet.ps1` + `Watch-Pet.vbs` | 看门狗循环及其隐藏启动器 |
 | `tools/build-sprites.mjs` | 从 `art/whale.json` 重建 `assets/whale-sheet.png` |
+| `tools/Capture-DocsShots.ps1` | 重新生成文档截图（真实渲染函数 + 合成数据） |
 | `tools/Test-*.ps1`、`Probe-*.ps1` | 实机校验工具（贴边、命中测试、看门狗、唤起……） |
 | `tests/` | 96 个单元测试，含运行器（`run-tests.mjs`） |
 | `docs/images/` | 两份 README 使用的截图 |
