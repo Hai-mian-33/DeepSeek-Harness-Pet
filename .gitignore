@@ -1,0 +1,23 @@
+# Runtime state written by the bridge and the shell. Not source.
+state/
+
+# Generated reference extracts (DSH internals read during development).
+ref/
+
+# Build/verification scratch: screenshots, logs, probes. The screenshots the
+# documentation needs live in docs/images instead.
+build/
+
+# Local diagnostics and editor/OS noise.
+*.log
+.DS_Store
+Thumbs.db
+
+# Local notes and project summaries that are not part of the distribution.
+*.docx
+
+# Node, if a dependency is ever installed for the sprite tooling.
+node_modules/
+
+# The extracted whale art is committed; the sprite sheet is generated from it.
+# Regenerate with: node tools/build-sprites.mjs

@@ -1,0 +1,44 @@
+{
+  "cellWidth": 192,
+  "cellHeight": 208,
+  "columns": 8,
+  "rows": 9,
+  "states": {
+    "idle": {
+      "row": 0,
+      "frames": 8
+    },
+    "thinking": {
+      "row": 1,
+      "frames": 8
+    },
+    "working": {
+      "row": 2,
+      "frames": 8
+    },
+    "waiting": {
+      "row": 3,
+      "frames": 8
+    },
+    "celebrate": {
+      "row": 4,
+      "frames": 8
+    },
+    "error": {
+      "row": 5,
+      "frames": 8
+    },
+    "drag": {
+      "row": 6,
+      "frames": 8
+    },
+    "longtask": {
+      "row": 7,
+      "frames": 8
+    },
+    "reserve": {
+      "row": 8,
+      "frames": 8
+    }
+  }
+}

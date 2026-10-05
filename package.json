@@ -1,0 +1,37 @@
+{
+  "name": "deepseek-pet",
+  "version": "1.0.0",
+  "description": "Blue-whale desktop pet for DeepSeek Harness: live per-session status bubbles, drag-with-edge-fixing, bilingual UI (zh-CN / en). Windows WPF shell + zero-dependency Node bridge.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "Sun Haiming (孙海铭)",
+    "email": "haiming.sun33@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hai-mian-33/DeepSeek-Harness-Pet.git"
+  },
+  "keywords": [
+    "deepseek",
+    "desktop-pet",
+    "wpf",
+    "powershell",
+    "node",
+    "status-monitor",
+    "desktop-companion"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "win32"
+  ],
+  "scripts": {
+    "start": "scripts\\start-pet.cmd",
+    "test": "node tests/run-tests.mjs",
+    "validate:shell": "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\Validate-Shell.ps1",
+    "sprites": "node tools/build-sprites.mjs"
+  }
+}
